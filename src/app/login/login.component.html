@@ -1,0 +1,25 @@
+<div class="container app">
+    <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../assets/icon.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form (ngSubmit)="onSumbit(signInForm)" #signInForm="ngForm">
+        <input type="text" id="email" class="fadeIn second" name="email" [(ngModel)]="model.brm" placeholder="Email">
+        <input type="text" id="password" class="fadeIn third" name="password" [(ngModel)]="model.password" placeholder="Password">
+        <input type="submit" class="fadeIn fourth" value="Iniciar Sesion">
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <img src="../assets/banregio.svg" id="icon" alt="User Icon" />
+      </div>
+  
+    </div>
+  </div>
+  </div>
